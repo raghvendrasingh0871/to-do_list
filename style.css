@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{ 
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #9B59B6;
+}
+.wrapper{  
+    width:100%;
+    min-width: 100%;
+    min-height:100vh;
+    display:flex;  
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper h2{
+    margin:20px;
+    font-size: 60px;
+}
+.container{
+    text-wrap:none;
+    font-size: 24px;
+    background: rgb(255, 255, 255);
+    margin:10px;
+    width: 400px;
+    min-height: 100px;
+    border:1px solid rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.row{
+    width:300px;
+    background: rgb(212, 212, 210);
+    margin:10px;
+    padding-left: 20px;
+    /* padding-right:0px; */
+    border: 1px solid rgb(169, 169, 179);
+    border-radius: 20px;
+    display:flex;
+}
+#input{
+    /* display:inline-block; */
+    height:34px;
+    flex-basis:100%;
+    background: transparent;
+    outline:none;
+    border:none;
+    border-radius:2px;
+}
+#addBtn{
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    height:34px;
+    padding-inline:30px;
+    background:greenyellow;
+    cursor:pointer;
+}
+.task-container{
+    width:400px;
+    height:auto;
+}
+ul li{
+    list-style-type: none;
+    position:relative;
+    display:flex;
+    justify-content: center;
+}
+ul li div{
+    margin-left:30px;
+    width:300px;
+    display:inline-block;
+    text-wrap: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+ul li div.completed{
+    text-decoration: line-through;
+}
+
+ul li img{
+    display: inline-block;
+    cursor:pointer;
+    width:25px;
+    height:25px;
+    user-select: none;
+    padding-left:5px;
+}
+ul li .dltBtn{
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width:auto;
+    height:auto;
+}
+ul li .dltBtn:hover{
+    border-radius:5px;
+    cursor:pointer;
+    background-color: rgb(248, 99, 99);
+}
